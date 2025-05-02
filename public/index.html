@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de contraseñas aleatorias</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <h1>Generador de contraseñas aleatorias</h1>
+
+        <!-- Campo donde se mostrara la contrasena generada -->
+        <input type="text" id="password" placeholder="Tu contraseña aparecera aqui..." readonly>
+
+        <!-- Controles -->
+        <div class="controls">
+            <!-- Elegir longitud -->
+            <label for="length">Longitud: </label>
+            <input type="number" id="length" min="4" max="32" value="12">
+
+            <!-- Opciones de que incluir -->
+            <div class="options">
+                <label for="checkbox" id="includeUpper" checked> Mayusculas</label>
+                <label for="checkbox" id="includeLower" checked> Minusculas</label>
+                <label for="checkbox" id="includeNumbers" checked> Numeros</label>
+                <label for="checkbox" id="includeSymbols" checked> Simbolos</label>
+            </div>
+        </div>
+        
+        <!-- Boton para generar -->
+        <button id="generateBtn">Generar contraseña</button>
+    
+        <!-- Boton para copiar -->
+        <button id="copyBtn">Copiar</button>
+    </div>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
