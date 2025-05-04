@@ -35,8 +35,8 @@ function generatePassword() {
 
     // Generamos la contrasena caracter por caracter
     for (let i = 0; i < length; i++) {
-        const randomIndex = Math.floor(Math,random() * chars.length);
-        password += chats[randomIndex];
+        const randomIndex = Math.floor(Math.random() * chars.length);
+        password += chars[randomIndex];
     }
 
     // Mostramos la contrasena
